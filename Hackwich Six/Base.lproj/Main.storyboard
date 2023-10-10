@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="yaq-RF-iUn">
             <objects>
                 <viewController id="ZnK-U0-7XH" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="IFu-BO-HDX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="2xM-Ej-6XW"/>
+                    <navigationItem key="navigationItem" id="Rd1-5F-9Re"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGS-AH-vOs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="45"/>
+            <point key="canvasLocation" x="1082" y="127"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="cP3-qc-LKX">
             <objects>
                 <viewController id="vTi-CX-3I1" sceneMemberID="viewController">
@@ -34,11 +34,11 @@
                         <viewLayoutGuide key="safeArea" id="Pj6-or-xtL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="QPj-wP-z5h"/>
+                    <navigationItem key="navigationItem" id="XPi-kM-1Zc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjb-j8-Q5O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="-562"/>
+            <point key="canvasLocation" x="1082" y="-563"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MG2-lu-4It">
@@ -50,16 +50,56 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vTi-CX-3I1" kind="relationship" relationship="viewControllers" id="iLB-Yf-VSB"/>
-                        <segue destination="ZnK-U0-7XH" kind="relationship" relationship="viewControllers" id="0Na-hJ-pHl"/>
+                        <segue destination="yH8-8Y-fua" kind="relationship" relationship="viewControllers" id="iLB-Yf-VSB"/>
+                        <segue destination="GYC-Bk-euF" kind="relationship" relationship="viewControllers" id="0Na-hJ-pHl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Amj-WJ-NSz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-816" y="-259"/>
         </scene>
+        <!--My friends-->
+        <scene sceneID="joN-tX-W6A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yH8-8Y-fua" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My friends" image="person.2.fill" catalog="system" id="QPj-wP-z5h"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6o5-FS-KhJ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vTi-CX-3I1" kind="relationship" relationship="rootViewController" id="SD9-Ym-xub"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIk-86-qMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.312977099236633" y="-562.67605633802816"/>
+        </scene>
+        <!--Places to travel-->
+        <scene sceneID="Gt3-0U-AJ1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GYC-Bk-euF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Places to travel" image="airplane" catalog="system" id="2xM-Ej-6XW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="98S-DZ-btZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZnK-U0-7XH" kind="relationship" relationship="rootViewController" id="paM-e3-DRr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXa-69-Wd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="127"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="airplane" catalog="system" width="128" height="115"/>
+        <image name="person.2.fill" catalog="system" width="128" height="81"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
