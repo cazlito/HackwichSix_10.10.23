@@ -7,7 +7,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+    var myFriendsArray = ["Sarah", "Nicole", "Grant"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myFriendsArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //prototype cell that repeats itself
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        //taking the items in the array and displaying it onto the cell
+                   let text = myFriendsArray[indexPath.row]
+                   cell.textLabel?.text = text
+                   return cell
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
