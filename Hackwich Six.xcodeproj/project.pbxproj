@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743CEB7B2ADF4E56002EAF45 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743CEB7A2ADF4E56002EAF45 /* Launch Screen.storyboard */; };
 		74BF6A332AD60B2200E657CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BF6A322AD60B2200E657CA /* AppDelegate.swift */; };
 		74BF6A352AD60B2200E657CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BF6A342AD60B2200E657CA /* SceneDelegate.swift */; };
 		74BF6A372AD60B2200E657CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BF6A362AD60B2200E657CA /* ViewController.swift */; };
 		74BF6A3A2AD60B2200E657CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BF6A382AD60B2200E657CA /* Main.storyboard */; };
 		74BF6A3C2AD60B2400E657CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BF6A3B2AD60B2400E657CA /* Assets.xcassets */; };
-		74BF6A3F2AD60B2400E657CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BF6A3D2AD60B2400E657CA /* LaunchScreen.storyboard */; };
 		74BF6A4A2AD60B2400E657CA /* Hackwich_SixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BF6A492AD60B2400E657CA /* Hackwich_SixTests.swift */; };
 		74BF6A542AD60B2400E657CA /* Hackwich_SixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BF6A532AD60B2400E657CA /* Hackwich_SixUITests.swift */; };
 		74BF6A562AD60B2400E657CA /* Hackwich_SixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BF6A552AD60B2400E657CA /* Hackwich_SixUITestsLaunchTests.swift */; };
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		743CEB7A2ADF4E56002EAF45 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		74BF6A2F2AD60B2200E657CA /* Hackwich Six.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackwich Six.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BF6A322AD60B2200E657CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74BF6A342AD60B2200E657CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		74BF6A362AD60B2200E657CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74BF6A392AD60B2200E657CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74BF6A3B2AD60B2400E657CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74BF6A3E2AD60B2400E657CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74BF6A402AD60B2400E657CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74BF6A452AD60B2400E657CA /* Hackwich SixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hackwich SixTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BF6A492AD60B2400E657CA /* Hackwich_SixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackwich_SixTests.swift; sourceTree = "<group>"; };
@@ -105,9 +105,9 @@
 				74BF6A342AD60B2200E657CA /* SceneDelegate.swift */,
 				74BF6A362AD60B2200E657CA /* ViewController.swift */,
 				74BF6A382AD60B2200E657CA /* Main.storyboard */,
+				743CEB7A2ADF4E56002EAF45 /* Launch Screen.storyboard */,
 				74BF6A622AD60D7F00E657CA /* SecondViewController.swift */,
 				74BF6A3B2AD60B2400E657CA /* Assets.xcassets */,
-				74BF6A3D2AD60B2400E657CA /* LaunchScreen.storyboard */,
 				74BF6A402AD60B2400E657CA /* Info.plist */,
 			);
 			path = "Hackwich Six";
@@ -234,7 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74BF6A3F2AD60B2400E657CA /* LaunchScreen.storyboard in Resources */,
+				743CEB7B2ADF4E56002EAF45 /* Launch Screen.storyboard in Resources */,
 				74BF6A3C2AD60B2400E657CA /* Assets.xcassets in Resources */,
 				74BF6A3A2AD60B2200E657CA /* Main.storyboard in Resources */,
 			);
@@ -307,14 +307,6 @@
 				74BF6A392AD60B2200E657CA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		74BF6A3D2AD60B2400E657CA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74BF6A3E2AD60B2400E657CA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

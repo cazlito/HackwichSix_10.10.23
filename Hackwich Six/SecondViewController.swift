@@ -7,7 +7,22 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var cityTableView: UITableView!
+    var myCityArray = ["Japan", "New Zealand", "New York"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myCityArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cityCell", for: indexPath)
+        
+        let text = myCityArray[indexPath.row]
+        cell.textLabel?.text = text
+        return cell
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
