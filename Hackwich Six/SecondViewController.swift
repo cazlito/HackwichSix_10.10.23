@@ -10,16 +10,19 @@ import UIKit
 class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var cityTableView: UITableView!
-    var myCityArray = ["Japan", "New Zealand", "New York"]
+    var myCountryArray = ["Japan", "Germany", "Philippines"]
+    var mycountryCityArray = ["Kyoto", "Berlin", "Baguio"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myCityArray.count
+        return myCountryArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cityCell", for: indexPath)
         
-        let text = myCityArray[indexPath.row]
+        let text = myCountryArray[indexPath.row]
+        cell.detailTextLabel?.text = mycountryCityArray[indexPath.row]
+
         cell.textLabel?.text = text
         return cell
     }

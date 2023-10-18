@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     var myFriendsArray = ["Sarah", "Nicole", "Grant"]
-    //var myfriendsHomeArray
+    var myfriendsHomeArray = ["Wahiawa", "Mililani", "Pearl City"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myFriendsArray.count
@@ -22,8 +22,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //prototype cell that repeats itself
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         //taking the items in the array and displaying it onto the cell
-                   let text = myFriendsArray[indexPath.row]
-                   cell.textLabel?.text = text
+            let text = myFriendsArray[indexPath.row]
+            cell.detailTextLabel?.text = myfriendsHomeArray[indexPath.row]
+
+            cell.textLabel?.text = text
                    return cell
     }
 
